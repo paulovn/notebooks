@@ -177,15 +177,6 @@
          stop-color="rgb(242,207,127)"
          offset="1" />
     </linearGradient>
-    <filter
-       inkscape:collect="always"
-       id="filter7068">
-      <feBlend
-         inkscape:collect="always"
-         mode="multiply"
-         in2="BackgroundImage"
-         id="feBlend7070" />
-    </filter>
     <linearGradient
        inkscape:collect="always"
        xlink:href="#linearGradient20759"
@@ -3442,16 +3433,6 @@
     </linearGradient>
     <filter
        color-interpolation-filters="sRGB"
-       inkscape:collect="always"
-       id="filter7068-1">
-      <feBlend
-         inkscape:collect="always"
-         mode="multiply"
-         in2="BackgroundImage"
-         id="feBlend7070-0" />
-    </filter>
-    <filter
-       color-interpolation-filters="sRGB"
        id="filter3232-3"
        inkscape:collect="always">
       <feGaussianBlur
@@ -3545,7 +3526,7 @@
        d="m 811.42857,358.07647 h 200.00003 v 160 H 811.42857 z"
        id="path7571" />
     <g
-       style="display:inline;filter:url(#filter7068);fill-rule:evenodd"
+       style="display:inline;fill-rule:evenodd"
        id="g5731"
        transform="matrix(0.01568464,0,0,0.01568464,345.08038,390.93642)">
       <g
@@ -3799,7 +3780,7 @@
       </g>
     </g>
     <g
-       style="display:inline;filter:url(#filter7068)"
+       style="display:inline;"
        id="g3272"
        transform="matrix(0.60289219,0,0,0.60289219,277.29608,391.39733)">
       <path
@@ -3820,7 +3801,7 @@
        sketch:type="MSPage"
        id="Page-1"
        transform="matrix(0.31588878,0,0,0.31588878,424.2447,318.11753)"
-       style="display:inline;filter:url(#filter7068);fill:none;stroke:none">
+       style="display:inline;fill:none;stroke:none">
       <g
          sketch:type="MSArtboardGroup"
          id="Artboard">
@@ -4222,7 +4203,7 @@
       </g>
     </g>
     <g
-       style="display:inline;filter:url(#filter7068-1)"
+       style="display:inline;"
        id="g3248-9"
        transform="matrix(0.64601067,0,0,0.64601067,628.16489,-39.80154)">
       <path
