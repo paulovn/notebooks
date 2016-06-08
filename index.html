@@ -1,0 +1,270 @@
+<!doctype html>
+<html lang="en">
+
+  <head>
+    <meta charset="utf-8">
+
+    <title>NotebookDev</title>
+
+    <meta name="description" content="Developing with Notebooks">
+    <meta name="author" content="Paulo Villegas">
+
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no, minimal-ui">
+    <link rel="stylesheet" href="css/reveal.css">
+    <link rel="stylesheet" href="css/theme/moon-tid.css" id="theme">
+    <style>
+    .reveal h1 { font-size: 3.00em; color: #f0f0c0; }
+    </style>
+
+    <!-- Printing and PDF exports -->
+    <script>
+    var link = document.createElement( 'link' );
+    link.rel = 'stylesheet';
+    link.type = 'text/css';
+    link.href = window.location.search.match( /print-pdf/gi ) ? 'css/print/pdf.css' : 'css/print/paper.css';
+    document.getElementsByTagName( 'head' )[0].appendChild( link );
+    </script>
+    <!--[if lt IE 9]>
+    <script src="lib/js/html5shiv.js"></script>
+    <![endif]-->
+  </head>
+
+  <body>
+
+    <div class="reveal">
+      
+      <div class="slides">
+
+	<section>
+	  <h1>Developing with Notebooks</h1>
+<p><b style="color: red;">not</b> related to computer laptops<br/>(although you <span style="text-decoration: underline;">can</span> run a Notebook system in a laptop)</p>
+	  <p style="margin-top: 2em;"><small>Paulo Villegas</small><br/>
+          <small>TEFCON, 2016</small></p>
+	</section>
+
+        <section>
+          <h1>Contents</h1>
+          <ol>
+            <li class="fragment">The explanation<br/>
+              <small>A description/justification/exposition of Notebooks</small>
+            </li>
+            <li class="fragment">The examples<br/>
+              <small>Walkthrough & execution over a few notebook examples</small>
+            </li>
+            <li class="fragment">The proposal<br/>
+              <small>Initial sketch of how to improve knowledge sharing by using Notebooks</small>
+            </li>
+          </ol>
+        </section>
+
+	<section>
+	  <h1 style="font-size: 64px;">Context</h1>
+          <section></section>
+
+          <section>
+            <h2>Literate programming</h2>
+            <blockquote>an approach to programming in which a program is given as an <b>explanation of the program logic in a natural language interspersed with snippets of macros and traditional source code</b>, from which a compilable source code can be generated</blockquote>
+            <p>Example: <a href="http://www.cs.tufts.edu/~nr/noweb/examples/wcni.html" target="other"><code>wcni.c</code></a></p>
+          </section>
+
+          <section>
+            <h2>Reproducible research</h2>
+            <blockquote>data analyses, and more generally, scientific claims, are published with their data and software code so that others may verify the findings and build upon them.</blockquote>
+          </section>
+
+          <section>
+            <h2>Interactive code development</h2>
+            <blockquote>IDEs with 'shell-like' interfaces for interactively running the code and getting the results</blockquote>
+            <p>Examples: <a href="https://www.rstudio.com/" target="other"><code>RStudio</code></a>, <a href="http://www.mathworks.com/products/matlab/" target="other">Matlab</a>/<a href="https://www.gnu.org/software/octave/" target="other">Octave</a> GUIs</p>
+            </section>
+
+	</section>
+
+        <section>
+          <h1>REPL</h1>
+          <section>
+            <h2><a href="https://en.wikipedia.org/wiki/Read%E2%80%93eval%E2%80%93print_loop" target="other">read-eval-print loop</a></h2>
+            <div class="fragment">
+            <h3>Examples</h3>
+            <ul>
+              <li>Lisp interactive environments<br/><small><em> (probably the origin of the REPL name)</em></small></li> 
+              <li><a href="http://www.tutorialspoint.com/unix_terminal_online.php" target="other">Unix shells</a></li>
+              <li><a href="http://ipython.org/" target="other">IPython</a></li>
+              <li><a href="http://www.scalakata.com/" target="other">Scala</a></li>
+            </ul>
+              <p>... and <a href="http://joel.franusic.com/Online-REPs-and-REPLs/" target="other">many more</a></p>
+</div>
+          </section>
+          <section>
+            <h2>Uses</h2>
+            <ul>
+              <li class="fragment">instantaneous prototyping</li>
+              <li class="fragment">mathematical calculation (scientific analysis)</li>
+              <li class="fragment">interactive software maintenance</li>
+              <li class="fragment">benchmarking</li>
+              <li class="fragment">algorithm exploration</li>
+              <li class="fragment">learning a language</li>
+            </ul>
+          </section>
+        </section>
+
+        <section>
+          <h1>What is a notebook?</h1>
+<div style="text-align: left;">
+          <p>Two things at the same time:</p>
+          <ol>
+            <li class="fragment">A REPL to evaluate code in a given programming language</li>
+            <li class="fragment">An editor to create a storyline with <b style="color: #f0f0f0;">reproducible</b> code</li>
+          </ol>
+          <p class="fragment">The outcome is a rich document (text, graphics, formatting) that can be <em>executed</em></li>
+</p>
+        </section>
+
+        <section>
+          <h1>Notebook history</h1>
+          <ul>
+            <li class="fragment">The concept exists since the 80s. Arguably started with <b><a href="https://www.wolfram.com/mathematica/" target="other">Mathematica</a></b></li>
+            <li class="fragment">More recently, the rise of IPython as environment for scientific computation has caused a notebook fever</li>
+          </ul>
+        </section>
+
+        <section>
+          <h1>Notebook frameworks</h1>
+          <ul>
+            <li><a href="http://jupyter.org/" target="other">Jupyter</a> (see <a href="http://jupyter.readthedocs.org/en/latest/" target="other">documentation</a>)</li>
+            <li><a href="http://zeppelin-project.org/" target="other">Zeppelin</a></li>
+            <li><a href="http://www.sagenb.org/" target="other">SageMath</a></li>
+            <li><a href="http://beakernotebook.com/" target="other">Beaker Notebook</a></li>
+            <li>...</li>
+          </ul>
+        </section>
+
+        <section>
+          <section>
+            <h1>Jupyter notebook</h1>
+            <img src="media/jupyter-logo.svg" style="margin: 0px; background-color: #c0c0c0;"/>
+          </section>
+
+          <section>
+            <h1>Origin and structure</h1>
+            <ul>
+              <li>a split from IPython 4.0 onwards</li>
+              <li>a server exposing notebook functionality as a Web application (allowing document edition and code execution via a Web browser)</li>
+              <li>pluggable <a href="https://github.com/ipython/ipython/wiki/IPython-kernels-for-other-languages" target="other">kernels</a> for different programming languages</li>
+            </ul>
+          </section>
+
+          <section>
+            <h1>Installation</h1>
+            <ul>
+              <li class="fragment">Linux<br/><code>pip install ipython jupyter</code></li>
+              <li class="fragment">Windows, etc<br/>use <a href="https://www.continuum.io/downloads" target="other">Anaconda</a></li>
+              <li class="fragment">.. or use a <a href="https://wikis.tid.es/kg/index.php/ML:SparkVM" target="other">Virtual Machine</a></li>
+            </ul>
+          </section>
+
+          <section>
+            <h1>Sharing</h1>
+            <ul>
+              <li class="fragment"><em>As notebook</em><br/>for interaction and easy reproduction and play around</li>
+              <li class="fragment"><em>A formatted version (e.g.) PDF</em><br/>for easier portability (<a href="https://github.com/jupyter/nbconvert#jupyter-notebook-conversion" target="other"><code>nbconvert</code></a>)</li>
+              <li class="fragment">Online
+                <ul>
+                  <li><em>a rendered & saved notebook can be <span style="color: #f0f0f0;">directly</span> visualized </em></li>
+                  <li>also: <a href="http://nbviewer.jupyter.org/" target="other">Notebook viewer</a></li>
+                  <li>also: <a href="http://blog.jupyter.org/2015/05/07/rendering-notebooks-on-github/" target="other">GitHub</a> automatically renders uploaded notebooks (see <a href="https://github.com/ipython/ipython/wiki/A-gallery-of-interesting-IPython-Notebooks" target="other">gallery</a>)</li>
+                </ul>
+              </li>
+            </ul>
+          </section>
+
+          <section>
+            <h1>Extensions</h1>
+            <div style="text-align: left;">
+              <p>The Jupyter Notebook framework <a href="https://mindtrove.info/4-ways-to-extend-jupyter-notebook/" target="other">can be extended with additional functionality</a></p>
+              <p>Many notebook extensions (<em>nbextensions</em>) have already been <a href="https://github.com/ipython-contrib/IPython-notebook-extensions/wiki/Home-4.x-%28Jupyter%29" target="other">published</a>.</p>
+            </div>
+          </section>
+        </section>
+
+        <section>
+          <h2><a href="http://localhost:8008" target="other">to the code!!</a></h2>
+          <small><em>(asuming a local notebook server is running on port 8008)</em></small>
+        </section>
+
+        <section>
+          <section>
+            <h1>The proposal</h1>
+            <h2>An envisioned workflow</h2>
+          </section>
+
+          <section data-transition="fade-in fade-out" data-transition-speed="slow">
+            <h2 style="margin: 0px; padding: 0px; line-height: 1.0;"><small>Scene 1: developing</small></h2>
+            <div style="background-color: #c0c0c0; width: 100%; height: 600px; margin: 0px padding: 0px; border: 1px solid green;" data-svg-fragment="media/notebook-process-1.svg#[*|label=base]">
+              <a class="fragment" title="[*|label=Aprogrammer]"></a>
+              <a class="fragment" title="[*|label=B1notebook]"></a>
+              <a class="fragment" title="[*|label=B2notebook]"></a>
+              <a class="fragment" title="[*|label=Cserver]"></a>
+            </div>
+          </section>
+
+          <section data-transition="fade-in fade-out" data-transition-speed="slow">
+            <h2 style="margin: 0px; padding: 0px; line-height: 1.0;"><small>Scene 2: activating</small></h2>
+            <div style="background-color: #c0c0c0; width: 100%; height: 600px; margin: 0px padding: 0px; border: 1px solid green;" data-svg-fragment="media/notebook-process-2.svg#[*|label=base]">
+              <a class="fragment" title="[*|label=A1indexing]"></a>
+              <a class="fragment" title="[*|label=A2indexing]"></a>
+            </div>
+          </section>
+
+          <section data-transition="fade-in fade-out" data-transition-speed="slow">
+            <h2 style="margin: 0px; padding: 0px; line-height: 1.0;"><small>Scene 3: indexing</small></h2>
+            <div style="background-color: #c0c0c0; width: 100%; height: 600px; margin: 0px padding: 0px; border: 1px solid green;" data-svg-fragment="media/notebook-process-3.svg#[*|label=base]">
+              <a class="fragment" title="[*|label=A1indexing]"></a>
+              <a class="fragment" title="[*|label=A2indexing]"></a>
+            </div>
+          </section>
+
+          <section data-transition="fade-in fade-out" data-transition-speed="slow">
+            <h2 style="margin: 0px; padding: 0px; line-height: 1.0;"><small>Scene 4: reusing</small></h2>
+            <div style="background-color: #c0c0c0; width: 100%; height: 600px; margin: 0px padding: 0px; border: 1px solid green;" data-svg-fragment="media/notebook-process-4.svg#[*|label=base]">
+              <a class="fragment" title="[*|label=A1reusing]"></a>
+              <a class="fragment" title="[*|label=A2reusing]"></a>
+              <a class="fragment" title="[*|label=A3reusing]"></a>
+            </div>
+          </section>
+        </section>
+
+        <section>
+  the end
+        </section>
+      </div>  
+    </div>
+
+    <script src="lib/js/head.min.js"></script>
+    <script src="js/reveal.js"></script>
+    <script>
+    // Full list of configuration options available at:
+    // https://github.com/hakimel/reveal.js#configuration
+    Reveal.initialize({
+      controls: true,
+      progress: true,
+      history: true,
+      center: true,
+      transition: 'slide', // none/fade/slide/convex/concave/zoom
+
+      // Optional reveal.js plugins
+      dependencies: [
+	{ src: 'lib/js/classList.js', condition: function() { return !document.body.classList; } },
+	{ src: 'plugin/highlight/highlight.js', async: true, callback: function() { hljs.initHighlightingOnLoad(); } },
+	{ src: 'plugin/zoom-js/zoom.js', async: true },
+	{ src: 'plugin/notes/notes.js', async: true },
+        { src: 'plugin/reveal-svg-fragment/reveal-svg-fragment.js', condition: function() { return !!document.querySelector( '[data-svg-fragment]' ); } }
+      ]
+    });
+
+    </script>
+    
+  </body>
+</html>
