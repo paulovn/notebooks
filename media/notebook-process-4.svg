@@ -178,15 +178,6 @@
          offset="1" />
     </linearGradient>
     <filter
-       inkscape:collect="always"
-       id="filter7068">
-      <feBlend
-         inkscape:collect="always"
-         mode="multiply"
-         in2="BackgroundImage"
-         id="feBlend7070" />
-    </filter>
-    <filter
        id="filter3232"
        inkscape:collect="always">
       <feGaussianBlur
@@ -3432,16 +3423,6 @@
     </linearGradient>
     <filter
        color-interpolation-filters="sRGB"
-       inkscape:collect="always"
-       id="filter7068-1">
-      <feBlend
-         inkscape:collect="always"
-         mode="multiply"
-         in2="BackgroundImage"
-         id="feBlend7070-0" />
-    </filter>
-    <filter
-       color-interpolation-filters="sRGB"
        id="filter3232-5-4"
        inkscape:collect="always">
       <feGaussianBlur
@@ -3451,42 +3432,12 @@
     </filter>
     <filter
        color-interpolation-filters="sRGB"
-       inkscape:collect="always"
-       id="filter7068-7">
-      <feBlend
-         inkscape:collect="always"
-         mode="multiply"
-         in2="BackgroundImage"
-         id="feBlend7070-8" />
-    </filter>
-    <filter
-       color-interpolation-filters="sRGB"
        id="filter3232-9"
        inkscape:collect="always">
       <feGaussianBlur
          id="feGaussianBlur3234-33"
          stdDeviation="4.3283459"
          inkscape:collect="always" />
-    </filter>
-    <filter
-       color-interpolation-filters="sRGB"
-       inkscape:collect="always"
-       id="filter7068-2">
-      <feBlend
-         inkscape:collect="always"
-         mode="multiply"
-         in2="BackgroundImage"
-         id="feBlend7070-7" />
-    </filter>
-    <filter
-       color-interpolation-filters="sRGB"
-       inkscape:collect="always"
-       id="filter7068-4">
-      <feBlend
-         inkscape:collect="always"
-         mode="multiply"
-         in2="BackgroundImage"
-         id="feBlend7070-3" />
     </filter>
     <filter
        color-interpolation-filters="sRGB"
@@ -3647,7 +3598,7 @@
       </g>
     </g>
     <g
-       style="display:inline;filter:url(#filter7068);fill-rule:evenodd"
+       style="display:inline;fill-rule:evenodd"
        id="g5731"
        transform="matrix(0.01568464,0,0,0.01568464,345.08038,390.93642)">
       <g
@@ -3904,7 +3855,7 @@
        sketch:type="MSPage"
        id="Page-1"
        transform="matrix(0.31588878,0,0,0.31588878,424.2447,318.11753)"
-       style="display:inline;filter:url(#filter7068);fill:none;stroke:none">
+       style="display:inline;fill:none;stroke:none">
       <g
          sketch:type="MSArtboardGroup"
          id="Artboard">
@@ -4036,7 +3987,7 @@
          style="font-size:24px;text-anchor:middle;fill:#000000;stroke:#000000;stroke-width:0;font-family:serif" />
     </g>
     <g
-       style="display:inline;filter:url(#filter7068)"
+       style="display:inline;"
        id="g3272"
        transform="matrix(0.60289219,0,0,0.60289219,277.29608,391.39733)">
       <path
@@ -4233,7 +4184,7 @@
      id="layer7"
      inkscape:label="A3reusing">
     <g
-       style="display:inline;filter:url(#filter7068-7)"
+       style="display:inline;"
        id="g3248-93"
        transform="matrix(0.57208384,0,0,0.57208384,252.86781,222.91523)">
       <path
@@ -4256,7 +4207,7 @@
        d="m 179.42672,472.64619 c 1.9838,1.98239 3.07579,4.61999 3.07579,7.42488 0,2.80489 -1.09199,5.44038 -3.07509,7.42418 -1.9831,1.98379 -4.61859,3.07509 -7.42279,3.07509 -2.80489,0 -5.44108,-1.092 -7.42417,-3.07509 -1.9831,-1.9838 -3.07579,-4.61999 -3.07579,-7.42418 0,-2.80419 1.09199,-5.43899 3.07649,-7.42418 1.98379,-1.9831 4.61998,-3.07509 7.42487,-3.07509 2.8028,0 5.43899,1.09199 7.42279,3.07509 z m 22.27114,37.1461 c -16.40305,16.40305 -42.99249,16.40305 -59.39624,0 -16.40096,-16.40446 -16.40236,-42.99249 0,-59.39484 16.40375,-16.40306 42.99389,-16.40446 59.39624,-0.002 16.40236,16.40375 16.40236,42.99388 0,59.39694 z m 1.7759,-24.53284 v -10.49997 h -11.14817 c -0.4949,-1.90539 -1.253,-3.72539 -2.261,-5.41798 l 7.89458,-7.89598 -7.42488,-7.42348 -7.91908,7.92048 c -1.68419,-0.9905 -3.49509,-1.7374 -5.38858,-2.2204 v -11.21187 h -10.49998 v 11.22937 c -1.88719,0.4865 -3.69179,1.2341 -5.36898,2.226 l -7.94288,-7.94288 -7.42558,7.42418 7.93308,7.93308 c -0.9982,1.67999 -1.75,3.48809 -2.24,5.37948 h -11.20697 v 10.49997 h 11.17197 c 0.483,1.9054 1.2341,3.72819 2.2302,5.42289 l -7.88898,7.88758 7.42698,7.42418 7.86238,-7.86238 c 1.69959,1.0136 3.53079,1.77519 5.44738,2.26799 v 11.10897 h 10.49997 v -11.09357 c 1.9236,-0.49 3.7611,-1.25019 5.46909,-2.26449 l 7.84278,7.84348 7.42488,-7.42488 -7.85118,-7.85188 c 1.0059,-1.7045 1.764,-3.53989 2.2498,-5.45999 h 11.11457 v 0.002 h -0.002 z"
        id="path13117-8" />
     <g
-       style="display:inline;filter:url(#filter7068-4)"
+       style="display:inline;"
        id="g3272-3"
        transform="matrix(0.60289219,0,0,0.60289219,32.67438,326.3574)">
       <path
